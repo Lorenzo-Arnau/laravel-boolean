@@ -3,10 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Car;
+
 
 class AutoController extends Controller
 {
     public function index(){
-        echo 'hello';
+        $cars = Car::all();
+       return view('/list',['cars'=>$cars]);
     }
 }

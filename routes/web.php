@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('list');
 });
 
-Route::get('/auto','AutoController@index');
+Route::get('/list','AutoController@index');
